@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mason C. Coco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#Education">Education</a>
+
+        <a href="#Certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero" id="home">
+        <video autoplay muted loop id="heroVideo">
+            <source src="Binary_Code.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="hero-content">
+            <h1>Mason C. Coco</h1>
+        </div>
+    </section>
+    <section class="section about" id="about"> 
+        <h2> About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="MasonCoco.JPEG" alt="Profile Picture">
+            </div>
+            <div class="about-text">
+                <p>I am an enthusiastic Computer Science graduate with a concentration in Networks and Security from Colorado State University. During my time at Colorado State University, I completed a Business Administration minor and earned a certification in entrepreneurship. I bring a comprehensive blend of academic knowledge, technical proficiency, and practical experience in cybersecurity. My background includes hands-on cybersecurity research as well as teaching cyber operations to high school students at MIT. Outside of classes, I have built a solid foundation with numerous certifications, including CompTIA A+, Network+, Security+, and three Microsoft Office certifications. In addition to my formal education, I have undertaken various projects that have allowed me to apply my skills in real-world scenarios. These projects include developing secure network infrastructures, performing penetration tests, and conducting vulnerability assessments. My work has not only honed my technical abilities but also enhanced my problem-solving skills and attention to detail. I am passionate about staying updated with the latest trends and technologies in cybersecurity. I regularly participate in workshops, webinars, and conferences to continuously expand my knowledge. My commitment to lifelong learning ensures that I am always equipped with the most current and effective tools and techniques. Beyond my professional pursuits, I am very outgoing and love to be outdoors. I enjoy activities such as boating, skiing, hiking, and wakeboarding. These experiences not only keep me active but also fuel my passion for adventure and learning new skills. I believe that a well-rounded life contributes to a well-rounded professional, and I strive to bring that balance to everything I do. I am now seeking a challenging role where I can leverage my skills and continue to grow my abilities. I am eager to contribute to a dynamic team and make a meaningful impact in the field of cybersecurity.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section education" id="Education">
+        <h2>Education</h2>
+        <div>
+            <text> Example</text>
+        </div>
+    </section>
+    <section class="section Certifications" id="Certifications">
+        <h2>Certifications</h2>
+        <div>
+            <text> Example</text>
+        </div>
+    </section>
+    <section class="section projects" id="projects">
+        <h2>Projects</h2>
+        <div>
+            <img src="project1.jpg" alt="Project 1">
+            <img src="project2.jpg" alt="Project 2">
+            <img src="project3.jpg" alt="Project 3">
+        </div>
+    </section>
+    <section class="section contact" id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xleqykrp" method="POST">
+                <input type="text" name="Name" required placeholder="Name">
+                <input type="email" name="Email" required placeholder="Email">
+                <textarea name="Message" required placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
