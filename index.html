@@ -26,7 +26,7 @@
         </div>
     </section>
     <section class="section about" id="about"> 
-        <h2> About Me</h2>
+        <h2 style="border-bottom: 2px solid #333; padding-bottom: 5px; margin-bottom: 20px;"> About Me</h2>
         <div class="about-content">
             <div class="about-image">
                 <img src="MasonCoco.jpeg" alt="Profile Picture">
@@ -36,28 +36,115 @@
             </div>
         </div>
     </section>
-    <section class="section education" id="Education">
-        <h2>Education</h2>
-        <div>
-            <text> Example</text>
+    <section class="section education" id="Education" style="padding: 20px; font-family: Arial, sans-serif;">
+        <h2 style="border-bottom: 2px solid #333; padding-bottom: 5px; margin-bottom: 20px;">Education</h2>
+        <div style="margin-bottom: 30px;">
+            <h3 style="color: #000; margin-bottom: 5px;">Cybersecurity Bootcamp</h3>
+            <p><strong>University of Colorado, Boulder, CO</strong> <span style="float: right; font-style: italic; color: #555;">Jun 2024 - Present</span></p>
+            <p><em>Relevant Coursework:</em> Information Security, Network Security, Risk Management, System Security, Application Security, Offensive Security, Threats and Threat Actors, Computer Networking, Security Systems Administration, Infrastructure Security, Social Engineering, Ethical Hacking, Digital Forensics, Incident Response, and Threat Hunting.</p>
+        </div>
+        <div style="margin-bottom: 30px;">
+            <h3 style="color: #000; margin-bottom: 5px;">Bachelor of Science in Computer Science</h3>
+            <p><strong>Colorado State University, Fort Collins, CO</strong> <span style="float: right; font-style: italic; color: #555;">August 2020 - Jun 2024</span></p>
+            <p style="float: right; font-weight: bold; color: #333;">GPA: 3.2</p>
+            <p><strong>Concentration:</strong> Network and Security <br>
+            <strong>Minor:</strong> Business Administration <br>
+            <strong>Certifications:</strong> Entrepreneurship</p>
+            <p><em>Relevant Coursework:</em> Personal Computing, Data Structures, Algorithms - Theory and Practice, Operating Systems, Object-Oriented Design, Software Engineering, Computer Organization, Systems Security, Software Development with C++, Modern Cybersecurity, Computer Networks/Internet, Ethical Computing Systems, Database Systems, Modern Web Apps, Principles of Human-Computer Interaction</p>
         </div>
     </section>
-    <section class="section Certifications" id="Certifications">
-        <h2>Certifications</h2>
-        <div>
-            <text> Example</text>
+    
+    
+    <section class="section certifications" id="Certifications">
+        <h2 style="border-bottom: 2px solid #333; padding-bottom: 5px; margin-bottom: 20px;">Certifications</h2>
+        <h3><Completed class=""></Completed></h3>
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; width: 90%; margin: 0 auto;">
+            <div class="cert-container">
+                <img src="comptia_a.jpg" alt="CompTIA A+" width="250" height="193.6"><br>CompTIA A+
+            </div>
+            <div class="cert-container">
+                <img src="comptia_network.jpg" alt="CompTIA Network+" width="250" height="193.6"><br>CompTIA Network+
+            </div>
+            <div class="cert-container">
+                <img src="comptia_security.jpg" alt="CompTIA Security+" width="250" height="193.6"><br>CompTIA Security+
+            </div>
+            <div class="cert-container">
+                <img src="Testout_PCPro.jpg" alt="TestOut PC Pro" width="250" height="193.6"><br>TestOut PC Pro
+            </div>
+            <div class="cert-container">
+                <img src="Testout_NetworkPro.jpg" alt="TestOut Network Pro" width="250" height="193.6"><br>TestOut Network Pro
+            </div>
+            <div class="cert-container">
+                <img src="microsoft_office_specialist.jpg" alt="Microsoft Office Specialist" width="250" height="193.6"><br>Microsoft Office Specialist
+            </div>
+        </div>
+        <h3>In progress...</h3>
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; width: 100%; margin: 0 auto;">
+            <div class="cert-container">
+                <img src="CEH.png" alt="Certified Ethical Hacker" width="250"><br>Certified Ethical Hacker (In progress)
+            </div>
+            <div class="cert-container">
+                <img src="comptia-pentest.png" alt="CompTIA Pentest+" height="250"><br>CompTIA Pentest+ (In progress)
+            </div>
         </div>
     </section>
-    <section class="section projects" id="projects">
-        <h2>Projects</h2>
-        <div>
-            <img src="project1.jpg" alt="Project 1">
-            <img src="project2.jpg" alt="Project 2">
-            <img src="project3.jpg" alt="Project 3">
+    
+    <script>
+        document.querySelectorAll('.cert-container img').forEach(img => {
+            img.addEventListener('click', () => {
+                if (img.classList.contains('enlarged')) {
+                    img.classList.remove('enlarged');
+                } else {
+                    document.querySelectorAll('.cert-container img.enlarged').forEach(otherImg => {
+                        otherImg.classList.remove('enlarged');
+                    });
+                    img.classList.add('enlarged');
+                }
+            });
+        });
+    </script>
+       <section class="section projects" id="projects">
+        <h2 style="border-bottom: 2px solid #333; padding-bottom: 5px; margin-bottom: 20px;">Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <!-- <img src="knight fight.jpg" alt="Knight Fight"><br> -->
+                <strong>Knight Fight</strong><br>
+                Developed a basic dice game in Java to demonstrate my Java skills.
+            </div>
+            <div class="project">
+                <!-- <img src="project2.jpg" alt="Wordle"><br> -->
+                <strong>Wordle</strong><br>
+                Developed Wordle in C++, while basic it allowed me to develop my C++ skills.
+            </div>
+            <div class="project">
+                <!-- <img src="project3.jpg" alt="Mapping Website"><br> -->
+                <strong>Mapping Website</strong><br>
+                Worked together as a team to develop a mapping website that would take into consideration different locations in React JS.
+            </div>
+            <div class="project">
+                <!-- <img src="project4.jpg" alt="Extinction Chess"><br> -->
+                <strong>Extinction Chess</strong><br>
+                Used React JS to create Extinction Chess with a number of teammates in an agile environment.
+            </div>
+            <div class="project">
+                <!-- <img src="project5.jpg" alt="Chat App"><br> -->
+                <strong>Chat App</strong><br>
+                Created both a client and server to develop a chat app that would allow users to communicate.
+            </div>
+            <div class="project">
+                <!-- <img src="project6.jpg" alt="Anonymous-Web-Get"><br> -->
+                <strong>Anonymous-Web-Get</strong><br>
+                Worked with another individual to create an application to browse the web anonymously using numerous different nodes.
+            </div>
+            <div class="project">
+                <!-- <img src="project7.jpg" alt="AI Study App"><br> -->
+                <strong>AI Study App</strong><br>
+                Personally created an application in React Native to test HCI principles that used OpenAI's API to generate study sets. In our testing, it was more effective than Quizlet!
+            </div>
         </div>
     </section>
     <section class="section contact" id="contact">
-        <h2>Contact Me</h2>
+        <h2 style="border-bottom: 2px solid #333; padding-bottom: 5px; margin-bottom: 20px;">Contact Me</h2>
         <form action="https://formspree.io/f/xleqykrp" method="POST">
                 <input type="text" name="Name" required placeholder="Name">
                 <input type="email" name="Email" required placeholder="Email">
@@ -76,4 +163,17 @@
         });
     </script>
 </body>
+<footer>
+    <!-- <p>All rights reserved, 2024 Mason C. Coco</p> -->
+    <div>
+        <a href="https://github.com/mcoco35" target="_blank">
+            <img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="GitHub" width="24" height="24">
+        </a>
+        <a href="https://linkedin.com/in/mason-coco" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" width="24" height="24"> 
+        </a>
+    </div>
+</footer>
+
+
 </html>
